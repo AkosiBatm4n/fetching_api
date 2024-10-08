@@ -28,7 +28,7 @@ function Example() {
   const { isPending, error, data } = useQuery({
     queryKey: ['repoData'],
     queryFn: () =>
-      fetch('https://api.github.com/repos/TanStack/query').then((res) =>
+      fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population').then((res) =>
         res.json(),
       ),
   })
@@ -54,7 +54,7 @@ const user_data = data.data
         </TableRow>
       </TableHeader>
       <TableBody>
-        {user_data?.map((data, key) => (
+        {user_data.map((data, key) => (
           <TableRow key={key}>
             <TableCell className="font-medium">{data.Nation}</TableCell>
             <TableCell>{data.Year}</TableCell>
