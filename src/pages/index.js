@@ -54,7 +54,7 @@ const user_data = data.data
         </TableRow>
       </TableHeader>
       <TableBody>
-        {user_data.map?((data, key) => (
+        {user_data?.map((data, key) => (
           <TableRow key={key}>
             <TableCell className="font-medium">{data.Nation}</TableCell>
             <TableCell>{data.Year}</TableCell>
