@@ -50,7 +50,7 @@ const user_data = data.data
           <TableHead className="w-[100px]">Nation</TableHead>
           <TableHead>Year</TableHead>
           <TableHead>Population</TableHead>
-          <TableHead className="text-right">Slug Nation</TableHead>
+          <TableHead className="text-medium">Slug Nation</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
@@ -59,7 +59,7 @@ const user_data = data.data
             <TableCell className="font-medium">{data.Nation}</TableCell>
             <TableCell>{data.Year}</TableCell>
             <TableCell>{data.Population}</TableCell>
-            <TableCell className="text-right">{data.Slug_Nation}</TableCell>
+            <TableCell className="text-medium">{data['Slug Nation']}</TableCell>
           </TableRow>
         ))}
       </TableBody>
